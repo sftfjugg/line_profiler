@@ -1,6 +1,11 @@
 Changes
 =======
 
+4.1.0
+~~~~~
+* ENH: Lowered overhead from line_profiler code when profiling by 33-67% by using different data structures. You should expect to see a worst-case overhead of ~10x, and an average-case overhead of 1.5x-2x with kernprof enabled.
+* ENH: Cython 3.0.0b1 is now supported for building.
+
 4.0.2
 ~~~~~
 * FIX: AttributeError on certain methods. #191
